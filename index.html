@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <script src="jquery-3.6.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p").hide();
+              });
+            });
+        <h1 style="textalign:center">jquery</h1>
+          
+            $(document).ready(function(){
+            $("button").click(function(){
+            $("#test").hide();
+             });
+          });
+        
+        
+          $(document).ready(function(){
+          $("button").click(function(){
+          $(".test").hide();
+          });
+              });
+              
+              
+             $(document).ready(function(){
+              $("button").click(function(){
+              $("*").hide();
+              });
+              });
+
+              $(document).ready(function(){
+              $("button").click(function(){
+             $(this).hide();
+                 });
+               });
+
+
+            </script>
+        
+            
+</head>
+<body>
+   <h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me to hide paragraphs</button>
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p id="test">This is another paragraph.</p>
+
+<button>Click me</button>
+<h2 class="test">This is a heading</h2>
+
+<p class="test">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("ul li:first-child").hide();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("tr:odd").css("background-color", "yellow");
+});
+</script>
+<p>List 1:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Milk</li>
+  <li>Tea</li>
+</ul>
+
+<p>List 2:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Milk</li>
+  <li>Tea</li>
+</ul>
+
+<button>Click me</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("[href]").hide();
+  });
+});
+</script>
+
+
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p><a href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+<p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+<button>Click me</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("a[target!='_blank']").hide();
+  });
+});
+</script>
+
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></p>
+<p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+<button>Click me</button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+
+<p>If you double-click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!-- <script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("You entered p1!");
+  });
+}); -->
+</script>
+
+<script>
+/*$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("You entered p1!");
+  });*/
+});
+</script>
+
+
+<p id="p1">Enter this paragraph.</p>
+
+
+<p id="p1">Enter this paragraph.</p>
+
+<script>
+  $(document).ready(function(){
+    $("#p1").mousedown(function(){
+      alert("Mouse down over p1!");
+    });
+  });
+  </script>
+  </head>
+  <body>
+  
+  <p id="p1">This is a paragraph.</p>
+
+  <script>
+    // $(document).ready(function(){
+    //   $("#p1").mouseup(function(){
+    //     alert("Mouse up over p1!");
+    //   });
+    // });
+    </script>
+    
+    <p id="p1">This is a paragraph.</p>
+    
+
+    <script>
+      // $(document).ready(function(){
+      //   $("#p1").hover(function(){
+      //     alert("You entered p1!");
+      //   },
+      //   function(){
+      //     alert("Bye! You now leave p1!");
+      //   }); 
+      // });
+      </script>
+      
+      
+      <p id="p1">This is a paragraph.</p>
+
+      <script>
+        $(document).ready(function(){
+          $("input").focus(function(){
+            $(this).css("background-color", "yellow");
+          });
+          $("input").blur(function(){
+            $(this).css("background-color", "green");
+          });
+        });
+        </script>
+        
+        
+        Name: <input type="text" name="fullname"><br>
+        Email: <input type="text" name="email">
+
+        <script>
+          $(document).ready(function(){
+            $("input").focus(function(){
+              $(this).css("background-color", "yellow");
+            });
+            $("input").blur(function(){
+              $(this).css("background-color", "green");
+            });
+          });
+          </script>
+          </head>
+          <body>
+          
+          Name: <input type="text" name="fullname"><br>
+          Email: <input type="text" name="email">
+
+          <script>
+            $(document).ready(function(){
+              $("p").on("click", function(){
+                $(this).hide();
+              });
+            });
+            </script>
+            </head>
+            <body>
+            
+            <p>If you click on me, I will disappear.</p>
+            <p>Click me away!</p>
+            <p>Click me too!</p>
+            
+            <script>
+              $(document).ready(function(){
+                $("p").on({
+                  mouseenter: function(){
+                    $(this).css("background-color", "lightgray");
+                  },  
+                  mouseleave: function(){
+                    $(this).css("background-color", "lightblue");
+                  }, 
+                  click: function(){
+                    $(this).css("background-color", "yellow");
+                  }  
+                });
+              });
+              </script>
+              
+              
+              <p>Click or move the mouse pointer over this paragrap</p>
+
+              <script>
+                $(document).ready(function(){
+                  $("#hide").click(function(){
+                    $("p").hide();
+                  });
+                  $("#show").click(function(){
+                    $("p").show();
+                  });
+                });
+                </script>
+                
+                
+                <p>If you click on the "Hide" button, I will disappear.</p>
+                
+                <button id="hide">Hide</button>
+                <button id="show">Show</button>
+
+
+                <script>
+                  $(document).ready(function(){
+                    $("button").click(function(){
+                      $("p").hide(1000);
+                    });
+                  });
+                  </script>
+                  
+                  <button>Hide</button>
+                  
+                  <p>This is a paragraph with little content.</p>
+                  <p>This is another small paragraph.</p>
+                
+
+                  <script>
+                    $(document).ready(function(){
+                      $("button").click(function(){
+                        $("p").toggle();
+                      });
+                    });
+                    </script>
+                    
+                    <button>Toggle between hiding and showing the paragraphs</button>
+                    
+                    <p>This is a paragraph with little content.</p>
+                    <p>This is another small paragraph.</p>
+
+
+
+                    <script>
+                      $(document).ready(function(){
+                        $("button").click(function(){
+                          $("#div1").fadeIn();
+                          $("#div2").fadeIn("slow");
+                          $("#div3").fadeIn(3000);
+                        });
+                      });
+                      </script>
+                      
+                      <p>Demonstrate fadeIn() with different parameters.</p>
+                      
+                      <button>Click to fade in boxes</button><br><br>
+                      
+                      <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+                      <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+                      <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+                      <script>
+                        $(document).ready(function(){
+                          $("button").click(function(){
+                            $("#div1").fadeOut();
+                            $("#div2").fadeOut("slow");
+                            $("#div3").fadeOut(3000);
+                          });
+                        });
+                        </script>
+                        
+                        
+
+                        <script>
+                       $(document).ready(function(){
+                       $("button").click(function(){
+                       $("#div1").fadeToggle();
+                       $("#div2").fadeToggle("slow");
+                        $("#div3").fadeToggle(3000);
+                             });
+                       });
+                      </script>
+                        
+
+                      <script>
+                        
+                       $("button").click(function(){
+                       $("#div1").fadeTo("slow", 0.15);
+                        $("#div2").fadeTo("slow", 0.4);
+                        $("#div3").fadeTo("slow", 0.7);
+                              });
+                        
+                        
+                        </script>
+                        
+                        
+                        <p>Demonstrate fadeOut() with different parameters.</p>
+                        
+                        <button>Click to fade out boxes</button><br><br>
+                        
+                        <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+                        <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+                        <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+
+                        <script> 
+                         /* $(document).ready(function(){
+                            $("#flip").click(function(){
+                              $("#panel").slideDown("slow");
+                            });
+                          });
+
+
+                        
+                          $("#flip").click(function(){
+                           $("#panel").slideUp();
+                                 });
+
+
+
+
+                                 $("#flip").click(function(){
+                                 $("#panel").slideToggle();
+                                  });*/
+                          
+                          </script>
+                          
+                          
+                          <style> 
+                          #panel, #flip {
+                            padding: 5px;
+                            text-align: center;
+                            background-color: #e5eecc;
+                            border: solid 1px #c3c3c3;
+                          }
+                          
+                          #panel {
+                            padding: 50px;
+                            display: none;
+                          }
+                          </style>
+                          
+                          
+                           
+                          <div id="flip">Click to slide down panel</div>
+                          <div id="panel">Hello world!</div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+                       <script>  
+                            $(document).ready(function(){
+                              $("button").click(function(){
+                                $("div").animate({left: '250px'});
+                              });
+                            });
+
+                            $("button").click(function(){
+                            $("div").animate({
+                            left: '250px',
+                            opacity: '0.5',
+                             height: '150px',
+                               width: '150px'
+                                  });
+                                      }); 
+                            </script> 
+                            
+                            
+                            <button>Start Animation</button>
+                            
+                            <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, 
+                                    remember to first set the CSS position property of the element to relative, fixed, or absolute!</p> 
+                            
+                          <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+
+
+
+
+
+
+                            <script> 
+                              $(document).ready(function(){
+                                $("button").click(function(){
+                                  $("div").animate({
+                                    height: 'toggle'
+                                  });
+                                });
+                              });
+                              </script> 
+                              
+                                                         
+                              <p>Click the button multiple times to toggle the animation.</p>
+                              
+                              <button>Start Animation</button>
+                              
+                              <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, 
+                                     remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+                              
+                              <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div> 
+
+
+
+
+                              <script> 
+                                $(document).ready(function(){
+                                  $("button").click(function(){
+                                    var div = $("div");
+                                    div.animate({height: '300px', opacity: '0.4'}, "slow");
+                                    div.animate({width: '300px', opacity: '0.8'}, "slow");
+                                    div.animate({height: '100px', opacity: '0.4'}, "slow");
+                                    div.animate({width: '100px', opacity: '0.8'}, "slow");
+                                  });
+                                });
+                                </script> 
+                              
+                                
+                                
+                                <button>Start Animation</button>
+                                
+                                <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the 
+                                       position, remember to first set the CSS position property of the element to relative, fixed, or 
+                                           absolute!</p>
+                                
+                                <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div> -->
+
+
+
+                                <!-- <script> 
+                                  $(document).ready(function(){
+                                    $("button").click(function(){
+                                      var div = $("div");  
+                                      div.animate({left: '100px'}, "slow");
+                                      div.animate({fontSize: '3em'}, "slow");
+                                    });
+                                  });
+                                  </script> 
+                                  
+                              
+                                  
+                                  <button>Start Animation</button>
+                                  
+                                    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the 
+                                        position, remember to first set the CSS position property of the element to relative, fixed, or 
+                                             absolute!</p>
+                                  
+                                  <div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div> -->
+
+                                  <script> 
+                                    $(document).ready(function(){
+                                      $("#flip").click(function(){
+                                        $("#panel").slideDown(5000);
+                                      });
+                                      $("#stop").click(function(){
+                                        $("#panel").stop();
+                                      });
+                                    });
+                                    </script>
+                                    <style> 
+                                    #panel, #flip {
+                                      padding: 5px;
+                                      font-size: 18px;
+                                      text-align: center;
+                                      background-color: #555;
+                                      color: white;
+                                      border: solid 1px #666;
+                                      border-radius: 3px;
+                                    }
+                                    
+                                    #panel {
+                                      padding: 50px;
+                                      display: none;
+                                    }
+                                    </style>
+                                    
+                                    
+                                     
+                                    <button id="stop">Stop sliding</button>
+                                    
+                                    <div id="flip">Click to slide down panel</div>
+                                    <div id="panel">Hello world!</div>
+
+                                    <script>
+                                      $(document).ready(function(){
+                                        $("button").click(function(){
+                                          $("p").hide(1000);
+                                          alert("The paragraph is now hidden");
+                                        });
+                                      });
+                                      </script>
+                                      
+                                      
+                                      <button>Hide</button>
+                                      
+                                      <p>This is a paragraph with little content.</p>
+
+
+
+                                      <script>
+                                        $(document).ready(function(){
+                                          $("button").click(function(){
+                                            $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+                                          });
+                                        });
+                                        </script>
+                                        
+                                        
+                                        <p id="p1">jQuery is fun!!</p>
+                                        
+                                        <button>Click me</button>
+
+
+                                      <script>
+                                          $(document).ready(function(){
+                                            $("button").click(function(){
+                                              $("#p1").css("color", "red")
+                                                .slideUp(2000)
+                                                .slideDown(2000);
+                                            });
+                                          });
+                                          </script>
+                                          
+                                          <p id="p1">jQuery is fun!!</p>
+                                          
+                                          <button>Click me</button>
+                                        
+                                  
+
+
+
+
+
+
+
+
+                    
+      
+
+
+</body>
+</html>
